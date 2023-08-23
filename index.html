@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick And Morty</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/api.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="init">
+            <div class="block__nav">
+                <img src="img/logo-Nav.svg" alt="imagen logo">
+                <span>Rick And Morty</span>
+            </div>
+
+            <ul>
+                <li><a id="mode" href="#">Mode</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="block__learneing">
+            <h1>¿ What will we use in this project ?</h1>
+            <div class="block__tecnologias">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JAVASCRIPT</p>
+            </div>
+            <a href="#block__uno">
+                <i class="bx bx-down-arrow-alt bx-fade-up ko flecha"></i>
+            </a>
+        </section>
+
+        <section id="block__uno" class="block__content__one">
+            <div class="left">
+                <h2> We will use JavaScript to change the theme of the page (light - dark)</h2>
+                <div class="texto">
+                    <p>
+                        <b>Element Selection:</b>
+                        Use methods like
+                        <b>document.getElementById</b>,
+                        <b>document.querySelector</b>,
+                        or
+                        <b>document.querySelectorAll</b>
+                        to select the HTML elements you
+                        want to modify in response to the theme change.
+                    </p>
+                    <br>
+                    <b>Change Event:</b>
+                    Assign an event, such as clicking a button or
+                    changing a setting, that will trigger the theme change.
+                    <br>
+                    <br>
+                    <b>Modify Classes or Styles: </b>
+                    Define different sets of CSS
+                    styling rules for the light and dark theme. You can change the
+                    classes of the elements using element.classList or modify the styles
+                    directly with JavaScript using element.style . Alternatively, you
+                    can add classes to the 
+                    <b>body</b>
+                    or other parent elements and
+                    define styles based on these classes.        
+                </div>
+            </div>
+            <div class="right" data-aos="fade-left">
+                <img src="img/img1.png" alt="imagen 1">
+            </div>
+        </section>
+
+        <section class="block__content__two block__content__one">
+            <div class="content__two__left">
+                <img data-aos="fade-right" src="img/img2.png" alt="imagen 2">
+            </div>
+            <div class="content_two_right">
+                <h2>
+                    we will use Fetch to get all the information about an API
+                </h2>
+                <p>
+                    By using the <b>Fetch</b> method, we enter the world of
+                    communications between web applications, making it possible to
+                    obtain complete data from an API.
+                    <br>
+                    <br>
+                    This action, essential in development and programming, triggers a
+                    sequence of steps that involves requesting, waiting for, and
+                    receiving data, culminating in the possibility of exhaustive
+                    analysis and the subsequent materialization of results. All this,
+                    framed in a dynamic context where information flows without borders,
+                    ready to be discovered and used.
+                  </p>
+            </div>
+        </section>
+        
+        <section class="block__content_three block__content__one">
+            <div class="content__three__lef">
+                <h2 style="text-align: center">
+                    we will use functions, string handling and API interaction
+                </h2>
+                <p>
+                    In this project, we will learn to create a browser using JavaScript,
+                    where we will apply essential concepts for web development. We'll
+                    use <b>functions</b> to handle the search logic, allowing us to
+                    search and filter data in a list. In addition, we will use string
+                    management <b>techniques</b> to compare and analyze user input,
+                    ensuring an accurate and efficient search.
+                    <br>
+                    <br>
+                    To take our search engine to the next level, we'll explore how to
+                    interact with APIs, allowing us to pull data online to display fresh
+                    and relevant results. We will learn how to use the
+                    <b>fetch</b> function to make requests to an API and process the
+                    responses received.
+                  </p>
+            </div>
+            <div class="content__three__right">
+                <img src="img/img4.png" alt="imagen 4" data-aos="fade-left"  data-aos-out="fade-left">
+            </div>
+        </section>
+
+        <div class="header">
+            <nav>
+                <div class="block__nav">
+                    <img src="img/logo-Nav.svg" alt="imagen logo">
+                    <span>Rick And Morty</span>
+                </div>
+    
+                <div class="search" id="searchCh">
+                    <input type="text" id="searchInput" placeholder="search character...">
+                    <button id="searchButton">Buscar</button>
+                </div>
+            </nav>
+        </div>
+
+        <div class="block__content__API"> 
+            <div class="block__content__data">
+                <!-- <div class="card">
+                    <div class="card__left">
+                        <h2>Rick Sanchez</h2>
+                        <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick Sanchez">
+                    </div>
+
+                    <div class="card__right">
+                        <p>Status: Alive</p>
+                        <p>species: Human</p>
+                        <p>gender: Male</p>
+                    </div>
+                </div> -->
+        </div>
+
+        </div>
+
+        <div class="paginador">
+            <button id="btn__left"><</button>
+            <button id="btn__right">></button>
+        </div>
+
+        <footer class="header">
+            <nav>
+                <div class="block__nav">
+                    <img src="img/logo-Nav.svg" alt="imagen logo">
+                    <span>Rick And Morty</span>
+                </div>
+    
+                <ul>
+                    <li id="btnScroll">🡹</li>
+                </ul>
+            </nav>
+        </footer>
+        
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
