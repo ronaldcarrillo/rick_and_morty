@@ -27,3 +27,31 @@
     width: 10pc;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 500px){
+    .block__learneing{
+        margin-top: 0;
+        height: 100vh;
+    }
+    .block__learneing h1{
+        font-size: 2.5pc;
+        padding-left: 10px;
+    }
+    .block__tecnologias{
+        font-size: 2pc;
+    }
+    .block__content__data{
+        grid-template-columns: 1fr;
+    }
+    .block__content__one{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .left, .right,.content_two_right,.content__two__left, .content__three__lef, .content__three__right{
+        width: 100%;
+    }
+   
+    .content_two_right, .content__three__lef{
+        padding: 0 1pc;
+    }
+}
